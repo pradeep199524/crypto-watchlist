@@ -1,0 +1,83 @@
+.dashboard {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  min-height: 180px;
+}
+
+.button-bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: auto;
+}
+
+.card-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-section.column {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: auto; 
+  align-self: flex-start; 
+}
+
+button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.last-updated {
+  font-size: 14px;
+  color: #555;
+  margin-left: 10px;
+}
